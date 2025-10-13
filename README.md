@@ -1,4 +1,4 @@
-# ICU Mortality Prediction — Python Implementation
+# ICU Mortality Prediction - Python Implementation
 
 ### A Comparative Analysis of Feature Ensembles for ICU Mortality Prediction
 
