@@ -99,7 +99,7 @@ Performance metrics include:
 
 **Sachin Mohandas**  
 Boston University – MET CS677: Data Science with Python  
-Instructor: Dr. Eugene Pinsky  
+Term Project (May 2024)  
 
 ---
 
