@@ -6,10 +6,10 @@
 
 ## Overview
 
-This project applies **machine learning** methods to predict **mortality outcomes of ICU patients**, using a subset of the **MIMIC-III** clinical database. The analysis aims to evaluate how different **feature ensembles** and **classification algorithms** perform in identifying high-risk cases, helping inform triage and care allocation decisions in critical care environments.
+This project applies machine learning methods to predict mortality outcomes of ICU patients, using a subset of the MIMIC-III clinical database. The analysis aims to evaluate how different feature ensembles and classification algorithms perform in identifying high-risk cases, helping inform triage and care allocation decisions in critical care environments.
 
-The project was developed in **Python** as part of *MET CS677 – Data Science with Python* at Boston University.  
-A parallel implementation was also completed in **R** for comparative analysis (see *ICU-Mortality-R* repository).
+The project was developed in **Python** as part of MET CS677 – Data Science with Python at Boston University.  
+A parallel implementation was also completed in **R** for comparative analysis (see ICU-Mortality-R repository).
 
 ---
 
@@ -36,7 +36,7 @@ Three supervised classification algorithms were implemented and compared:
 
 The analysis proceeds in two main stages:
 - **Full Feature Evaluation:** Train each classifier using all available numerical columns.
-- **Feature Ensemble Analysis:** Evaluate all **7,770 unique 3-feature combinations** to identify small ensembles with superior predictive power.
+- **Feature Ensemble Analysis:** Evaluate all 7,770 unique 3-feature combinations to identify small ensembles with superior predictive power.
 
 Performance metrics include:
 - Accuracy
@@ -60,9 +60,9 @@ Performance metrics include:
 
 ## Interpretation
 
-- **Random Forest** outperformed both Logistic Regression and Naïve Bayes, reflecting its ability to model **non-linear feature interactions** and handle **categorical variables** effectively.  
+- **Random Forest** outperformed both Logistic Regression and Naïve Bayes, reflecting its ability to model non-linear feature interactions and handle categorical variables effectively.  
 - **Naïve Bayes** underperformed due to its assumption of feature independence, which is not valid for many medical comorbidities.  
-- The similarity in top ensemble accuracies across models suggests that the most predictive signals are embedded in the **interactions** between features not included in smaller ensembles.
+- The similarity in top ensemble accuracies across models suggests that the most predictive signals are embedded in the interactions between features not included in smaller ensembles.
 
 ---
 
@@ -76,13 +76,13 @@ Performance metrics include:
 
 ## Limitations & Future Work
 
-- While 94.9% accuracy is high, the **false negative rate** remains concerning in a medical context.  
-- Models lack **clinical interpretability**, which is crucial for healthcare applications.  
+- While 94.9% accuracy is high, the false negative rate remains concerning in a medical context.  
+- Models lack clinical interpretability, which is crucial for healthcare applications.  
 - Future improvements could include:
-  - Incorporating **additional features and observations**
-  - Testing **neural network architectures**
-  - Performing **cross-validation** and **hyperparameter optimization**
-  - Exploring **explainability techniques** (e.g., SHAP, LIME)
+  - Incorporating additional features and observations
+  - Testing neural network architectures
+  - Performing cross-validation and hyperparameter optimization
+  - Exploring explainability techniques (e.g., SHAP, LIME)
 
 ---
 
